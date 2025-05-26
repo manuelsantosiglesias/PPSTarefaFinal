@@ -157,3 +157,39 @@ docker compose logs db
 
 **Manuel Enrique Santos Iglesias**  
 Curso de Docker + Git + Compose · 2025
+---
+
+## 🐞 Errores comunes y cómo solucionarlos
+
+### ❌ Error: El nombre del contenedor ya está en uso
+
+**Mensaje:**
+```
+Error response from daemon: Conflict. The container name "/backend" is already in use by container "XXXXXXXXXXXX".
+```
+
+**Causa:**  
+Ya existe un contenedor con el nombre `xxxxx` en tu sistema, aunque esté parado.
+
+**Solución:**
+
+1. Verifica los contenedores existentes (incluso los parados):
+
+```bash
+docker ps -a
+```
+
+2. Elimina el contenedor antiguo:
+
+```bash
+docker rm -f xxxxx
+```
+
+3. Ejecuta de nuevo el proyecto:
+
+```bash
+docker compose up -d
+```
+
+**Consejo:**  
+Antes de relanzar el proyecto, puedes usar `docker compose down` para limpiar contenedores y evitar conflictos.
