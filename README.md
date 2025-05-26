@@ -18,7 +18,7 @@ Este proyecto consiste en el despliegue de una aplicación web compuesta por tre
 Para ejecutar este proyecto necesitas tener instaladas las siguientes herramientas:
 
 - [Docker](https://www.docker.com/products/docker-desktop/) (versión recomendada: 20.x o superior)
-- [Docker Compose](incluido en Docker Desktop)
+- [Docker Compose](https://www.docker.com/products/docker-desktop/) (incluido en Docker Desktop)
 - [Git](https://git-scm.com/) (cualquier versión estable)
 
 ### 🔁 Clonar el repositorio
