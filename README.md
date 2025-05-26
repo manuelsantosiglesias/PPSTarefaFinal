@@ -71,7 +71,7 @@ El archivo `docker-compose.yml` define y coordina los tres servicios que forman 
 - Utiliza la imagen oficial `postgres:15`.
 - Se inicializa mediante el script `init.sql`, montado en el contenedor en la ruta `/docker-entrypoint-initdb.d/`.
 - Guarda los datos en un **volumen llamado `db_data`**, lo que asegura la persistencia incluso si se eliminan los contenedores.
-- Expone el puerto `5432`, útil para conectarse desde herramientas como DBeaver o pgAdmin si se desea.
+- Expone el puerto `5432`, útil para conectarse desde herramientas.
 
 ### 🔹 Volúmenes
 - El volumen `db_data` se define al final del archivo y se utiliza únicamente para almacenar de forma persistente los datos de PostgreSQL.
