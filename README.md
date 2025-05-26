@@ -13,6 +13,30 @@ Este proyecto consiste en el despliegue de una aplicación web compuesta por tre
 | db        | `postgres:15`       | Base de datos PostgreSQL con volumen persistente y script `init.sql` de inicialización. |
 
 ---
+## 🔧 Requisitos y uso básico
+
+Para ejecutar este proyecto necesitas tener instaladas las siguientes herramientas:
+
+- [Docker](https://www.docker.com/products/docker-desktop/) (versión recomendada: 20.x o superior)
+- [Docker Compose](incluido en Docker Desktop)
+- [Git](https://git-scm.com/) (cualquier versión estable)
+
+### 🔁 Clonar el repositorio
+
+```bash
+git clone https://github.com/manuelsantosiglesias/PPSTarefaFinal.git
+cd PPSTarefaFinal
+```
+
+### 🚀 Ejecutar la aplicación
+
+Una vez clonado el proyecto, simplemente ejecuta:
+
+```bash
+docker compose up -d
+```
+
+El entorno se construirá y desplegará automáticamente con los tres servicios funcionando: frontend, backend y base de datos.
 
 ## 🚀 Ejecución y pruebas
 
