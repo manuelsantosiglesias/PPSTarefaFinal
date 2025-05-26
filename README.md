@@ -165,7 +165,7 @@ Curso de Docker + Git + Compose · 2025
 
 **Mensaje:**
 ```
-Error response from daemon: Conflict. The container name "/backend" is already in use by container "XXXXXXXXXXXX".
+Error response from daemon: Conflict. The container name "xxxxxx" is already in use by container "XXXXXXXXXXXX".
 ```
 
 **Causa:**  
